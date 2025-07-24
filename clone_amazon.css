@@ -1,0 +1,643 @@
+* {
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #c9c9c9;
+}
+#navbar {
+    height: 60px;
+    background-color: #001111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 53px;
+    width: 110px;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+.logo {
+    background-image:url("logo.webp");
+    background-size: cover;
+    background-position: center;
+    height: 55px;
+    width: 100%;
+    position: relative;
+}
+
+/*  (box-2) now we will create nav address or location div  */ 
+
+#small {
+    font-size: 0.8rem;
+    color: #cccccc;
+    margin-left: 12px;
+}
+
+.location {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.nav-address p {
+    margin-top: 3px;
+}
+
+#country {
+    margin-left: 2px;
+}
+
+/* (box-3) now we will create search options */
+
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 900px;
+    border-radius: 4px;
+
+}
+
+.nav-search:hover {
+    border: 2px solid pink;
+    background-color: #001111
+}
+
+.select {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: #f3f3f3;
+    width: 58px;
+    text-align: center;
+    border: none;
+}
+
+.search {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+}
+
+.searchicon {
+    width: 45px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* (box-4) and (box-5) now we will create box 4 */
+.login1 {
+    font-size: 0.7rem;
+}
+
+.login2 {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* (box-5) now we will create box 5 */
+
+#cart {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* now we will create panel */
+
+.panel {
+    height: 39px;
+    background-color: #007185;
+    display: flex;
+    color: white;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.panel-all i {
+    font-size: 0.95rem;
+}
+
+.panel-all {
+    justify-content: left;
+    position: relative;
+    left: 15px;
+}
+
+.panel-ops {
+    display: flex;
+    width: 80%;
+    font-size: 0.85rem;
+    font-weight: 540;
+    position: relative;
+    left: 14px;
+}
+
+.panel-ops div {
+    margin-left: 15px;
+}
+
+.deals {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+/* hero section */
+
+.hero-section {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    height: 350px;
+    width: 1525px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+/* her-msg section */
+
+.hero-msg a {
+    text-decoration: none;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.88rem;
+    position: relative;
+    bottom: 30px;
+}
+
+/* now we will create shop section of our website and 1st item*/
+
+.items {
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    background-color: white;
+    height: 400px;
+    border: 1px solid black;
+    width: 23%;
+    padding: 20px 0px 15px;
+}
+
+.box-image1 {
+    background-image: url("toyimage.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #007185;
+}
+
+.box {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.box-content a {
+    position: relative;
+    top: 8px;
+    font-size: 0.8rem;
+}
+
+.box-content div {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* now we will create 2 nd box of our shop section */
+
+.box-image2 {
+    background-image: url("cpu.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* now we will create box 3 rd box of our shop section */
+
+.box-image3 {
+    background-image: url("decoration.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* now we will create our box 4 items */
+
+.box-contents a {
+    position: relative;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+
+.box-contents h2 {
+    margin-left: 20px;
+}
+
+.box-contents p {
+    position: relative;
+    bottom: 10px;
+}
+
+.box-image4 span {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 1px;
+}
+
+.box-image4 div {
+    margin-top: 20px;
+    bottom: 2px;
+}
+
+.box-image4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+}
+
+.image4-1 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.dress1 {
+    background-image: url("dress1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.image4-2 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.dress2 {
+    background-image: url("dress2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.image4-3 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.dress3 {
+    background-image: url("dress3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.image4-4 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.dress4 {
+    background-image: url("dress4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.box-image4 p {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 7px;
+}
+
+/* now  we will create our 5th box or we can say next row full of items */
+
+.nextrow {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.box-image5 {
+    background-image: url("shoes.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-image6 {
+    background-image: url("officefurniture.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-image7 {
+    background-image: url("combo.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-image8 {
+    background-image: url("trimmercombo.jpg");
+    height: 320px;
+    width: 300px;
+    background-size: cover;
+    background-position: right;
+    /* background-size: cover; */
+}
+
+/* now we will create another row full of items */
+
+.box-image9 {
+    background-image: url("laptop.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-image10 {
+    background-image: url("hotwheels.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: contain;
+}
+
+.box-image11 {
+    background-image: url("Bussiness.jpg");
+    height: 320px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* now we will create our 4th box of 3rd row */
+
+.box-contents a {
+    position: relative;
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+
+.box-contents h2 {
+    margin-left: 20px;
+}
+
+.box-contents p {
+    position: relative;
+    bottom: 10px;
+}
+
+.box-image12 span {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 1px;
+}
+
+.box-image12 div {
+    margin-top: 20px;
+    bottom: 2px;
+}
+
+.box-image12 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+}
+
+.image12-1 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.accesory1 {
+    background-image: url("chair.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.image12-2 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.accesory2 {
+    background-image: url("headset.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.image12-3 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.accesory3 {
+    background-image: url("keyboard.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.image12-4 div {
+    border: 2px solid black;
+    height: 120px;
+    width: 140px;
+    border: none;
+}
+
+.accesory4 {
+    background-image: url("mouse.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.box-image12 p {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 7px;
+}
+
+/* now we will design the footer section of the website to complete our website design */
+
+footer {
+    margin-top: 40px;
+}
+
+.foot-panel1 {
+    color: white;
+    font-size: 0.8rem;
+    background-color: #37475a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel2 {
+    display: flex;
+    background-color: #222f3d;
+    height: 430px;
+    justify-content: space-evenly;
+}
+
+.foot-panel2 p {
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+.foot-panel2 a {
+    display: block;
+    color: #dddddd;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
+
+/* now we will panel 3 opf our footer */
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color: #cccccc;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.foot-logo {
+    height: 65px;
+    width: 120px;
+    background-image: url("Amazon-Symbol.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foot-logo {
+    margin-left: 400px;
+}
+.foot-cntrycrc {
+    display: flex;
+    width: 430px;
+    justify-content: space-between;
+    margin-left: 150px;
+}
+
+.foot-cntrycrc div {
+    font-size: 0.8rem;
+    border-radius: 2px;
+    display: flex;
+    border: 1px solid #cccccc;
+    height:35px;
+}
+
+.cntrycrc1 {
+    width: 117px;
+}
+.cntrycrc2 {
+    width: 152px;
+}
+.cntrycrc3 {
+    width: 141px;
+}
+
+.foot-cntrycrc i, img,p {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.foot-cntrycrc i {
+    color: #FFFFFF;
+}
+
+/* now we will create our panel four which is last secttion of our website */
+
+.foot-panel4 {
+    height: 150px;
+    background-color: #131a22;
+    color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages a {
+    color: #dddddd;
+    font-size: 0.82rem;
+    margin-left: 10px;
+}
+
+.copyrights p {
+    font-size: 0.85rem;
+}

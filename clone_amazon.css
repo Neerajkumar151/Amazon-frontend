@@ -747,3 +747,132 @@ footer {
     .foot-panel1          { text-align:center; padding:12px; }
     .pages, .copyrights   { text-align:center; }
 }
+
+@media (max-width:480px) {
+    /* Navbar tweaks */
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-logo, .nav-address, .nav-login, .nav-returnorders, .nav-cart {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+        order: 2;
+        flex-direction: row;
+    }
+
+    .select {
+        width: 70px;
+    }
+
+    .searchicon {
+        width: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Hide non-critical navbar elements for phones */
+    .panel, .panel-ops, .deals {
+        display: none;
+    }
+
+    /* Hero section */
+    .hero-section {
+        height: 160px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-msg {
+        font-size: 0.75rem;
+        padding: 5px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    /* Product boxes - 1 per row */
+    .items,
+    .nextrow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .items .box,
+    .nextrow .box {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .box-image1, .box-image2, .box-image3, .box-image5,
+    .box-image6, .box-image7, .box-image8, .box-image9,
+    .box-image10, .box-image11 {
+        height: 200px;
+        width: 100%;
+    }
+
+    .box-image4, .box-image12 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-image4 div,
+    .box-image12 div {
+        width: 90%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .foot-panel2 ul {
+        width: 90%;
+        text-align: center;
+    }
+
+    .foot-panel3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .foot-logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .foot-cntrycrc {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .cntrycrc1, .cntrycrc2, .cntrycrc3 {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .foot-panel4 .pages {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .copyrights p {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+}
+

@@ -641,3 +641,109 @@ footer {
 .copyrights p {
     font-size: 0.85rem;
 }
+
+/* ───────────────────────────────────────────────
+   1. Base helper classes (optional, additive)
+   ─────────────────────────────────────────────── */
+.responsive-flex   { display:flex; flex-wrap:wrap; }
+.responsive-center { justify-content:center; align-items:center; }
+
+/* ───────────────────────────────────────────────
+   2. Desktop-first breakpoints
+   ─────────────────────────────────────────────── */
+
+/*  XL ≥1200 px  (default styles already cover this range)  */
+
+/*  LG 992-1199 px  */
+@media (max-width:1199.98px){
+    /* Navbar */
+    .nav-search        { width:680px; }
+    .panel-ops         { width:90%; }
+
+    /* Hero */
+    .hero-section      { width:100%; background-position:center; }
+
+    /* Card grid */
+    .items .box,
+    .nextrow .box      { width:31%; margin-bottom:25px; }
+
+    /* Multi-image boxes (#4 & #12) */
+    .box-image4, .box-image12 { gap:14px; }
+    .box-image4 div,
+    .box-image12 div          { width:120px; height:100px; }
+}
+
+/*  MD 768-991 px  */
+@media (max-width:991.98px){
+    /* Navbar stack */
+    #navbar             { flex-wrap:wrap; height:auto; padding:8px 0; }
+    .nav-logo           { margin-bottom:8px; }
+    .nav-search         { width:100%; order:3; margin:8px 0; }
+    .panel-ops          { width:100%; overflow-x:auto; }
+
+    /* Hero */
+    .hero-section       { height:260px; }
+
+    /* Products: two-per-row */
+    .items .box,
+    .nextrow .box       { width:47%; }
+
+    /* Footer columns */
+    .foot-panel2        { flex-wrap:wrap; height:auto; padding:24px 0; }
+    .foot-panel2 > div  { width:45%; margin-bottom:24px; }
+
+    /* Footer logo row */
+    .foot-panel3        { flex-direction:column; height:auto; padding:20px 0; }
+    .foot-logo          { margin:0 0 20px 0; }
+    .foot-cntrycrc      { margin:0; flex-wrap:wrap; width:100%; justify-content:center; gap:12px; }
+}
+
+/*  SM 576-767 px  */
+@media (max-width:767.98px){
+    /* Typography tweaks */
+    #small, .location, .nav-cart, .deals { font-size:0.8rem; }
+    .login1, .login2                      { font-size:0.7rem; }
+
+    /* Navbar icons shrink */
+    #cart                 { font-size:24px; }
+    .searchicon           { font-size:1.2rem; }
+
+    /* Product cards full-width */
+    .items .box,
+    .nextrow .box         { width:98%; }
+
+    /* Multi-image grids wrap to two columns */
+    .box-image4 div,
+    .box-image12 div      { width:45%; height:100px; }
+
+    /* Footer links center */
+    .foot-panel2 p        { margin-top:20px; }
+    .foot-panel2 a        { margin-top:10px; }
+}
+
+/*  XS ≤575 px  */
+@media (max-width:575.98px){
+    /* Remove custom scrollbar width for very small screens */
+    ::-webkit-scrollbar  { width:8px; }
+
+    /* Center logo and collapse nav items */
+    #navbar              { justify-content:space-between; padding:0 12px; }
+    .nav-address, .panel { display:none; }
+
+    /* Hero image shorter */
+    .hero-section        { height:200px; }
+
+    /* Product images scaled down */
+    .box-image1, .box-image2, .box-image3,
+    .box-image5, .box-image6, .box-image7,
+    .box-image8, .box-image9, .box-image10,
+    .box-image11          { height:220px; width:90%; }
+
+    /* Button-like links easier to tap */
+    .box-content a,
+    .box-contents a       { font-size:0.9rem; }
+
+    /* Footer text stack */
+    .foot-panel1          { text-align:center; padding:12px; }
+    .pages, .copyrights   { text-align:center; }
+}

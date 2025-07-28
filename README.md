@@ -1,7 +1,7 @@
 # 🛒 Amazon Clone Frontend (HTML + CSS Only)
 
 <p align="center">
-  <img src="images/s12.PNG" alt="Description" width="700" height="300"/>
+  <img src="amazon.PNG" alt="Description" width="700" height="300"/>
 </p>
 
 ---
